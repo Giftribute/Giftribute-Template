@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EShopper - Bootstrap Shop Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free HTML Templates" name="keywords">
+        <meta content="Free HTML Templates" name="description">
+    
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/hamper.css" rel="stylesheet">
+        
+        <style>
+            .scroll{
+                height: 300px;
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Topbar Start -->
+            <div class="row align-items-center py-3 px-xl-5">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <a href="" class="text-decoration-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-6 text-left">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for products">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent text-primary">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-6 text-right">
+                    <a href="" class="btn border">
+                        <i class="fas fa-heart text-primary"></i>
+                        <span class="badge">0</span>
+                    </a>
+                    <a href="" class="btn border">
+                        <i class="fas fa-shopping-cart text-primary"></i>
+                        <span class="badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+    
+    
+        <!-- Navbar Start -->
+        <div class="container-fluid mb-5">
+            <div class="row border-top px-xl-5">
+                <div class="col-lg">
+                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                        <a href="" class="text-decoration-none d-block d-lg-none">
+                            <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between mb-3 mt-3" id="navbarCollapse">
+                            <div class="navbar-nav ml-auto py-0">
+                                <a href="" class="nav-item nav-link">Login</a>
+                                <a href="" class="nav-item nav-link">Register</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Customise Start -->
+        <div class="customise-container">
+            <div class="customise-left">
+                <img class="customise-image" src="./img/customise-large.jpg" alt="hamper-image" />
+            </div>
+            <div class="customise-right">
+                <h1>Make your own Hamper</h1>
+                <h4>[price]</h4>
+                <p>[short description]</p>
+                <!-- customise-form start -->
+                <form id="customise-form" method="post">
+                    <!-- customise option 1 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-1" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">About the box</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse show navbar navbar-light p-0" id="customise-item-1">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="customise-info-container">
+                                    <span class="customise-info font-weight-bold">Basic Information</span>
+                                    <span class="customise-info">Base price for Rs. 400 is for gift box, shipping and decoration. You can select products from different menus below.</span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 1 end -->
+                    <!-- customise option 2 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-2" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Select gift box</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse show navbar navbar-light p-0" id="customise-item-2">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="customise-info-container">
+                                    <span class="customise-info font-weight-bold">About personalized gifts</span>
+                                    <span class="customise-info">Once you select any product, scroll below to the bottom of personalized gifts section to add customization information of that product.</span>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="radio" id="gift-box-1" name="gift-box" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gift-box-1">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="radio" id="gift-box-2" name="gift-box" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gift-box-2">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="radio" id="gift-box-3" name="gift-box" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gift-box-3">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="radio" id="gift-box-4" name="gift-box" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gift-box-4">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="radio" id="gift-box-5" name="gift-box" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gift-box-5">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 2 end -->
+                    <!-- customise option 3 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-3" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Special products for bride to be</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-3">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="customise-info-container">
+                                    <span class="customise-info font-weight-bold">Color of box</span>
+                                    <span class="customise-info">Available colors (whenever applicable) will be visible once you select the box.</span>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="bride-1" name="bride-product" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bride-1">
+                                        <img src="./img/customise-3.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bride-2" name="bride-product" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bride-2">
+                                        <img src="./img/customise-3.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bride-3" name="bride-product" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bride-3">
+                                        <img src="./img/customise-3.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bride-4" name="bride-product" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bride-4">
+                                        <img src="./img/customise-3.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bride-5" name="bride-product" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bride-5">
+                                        <img src="./img/customise-3.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 3 end -->
+                    <!-- customise option 4 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-4" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Personalized gifts</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-4">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="customise-info-container">
+                                    <span class="customise-info font-weight-bold">About personalized gifts</span>
+                                    <span class="customise-info">Once you select any product, scroll below to the bottom of personalized gifts section to add customization information of that product.</span>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="personalized-1" name="personalized-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="personalized-1">
+                                        <img src="./img/customise-4.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="personalized-2" name="personalized-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="personalized-2">
+                                        <img src="./img/customise-4.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="personalized-3" name="personalized-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="personalized-3">
+                                        <img src="./img/customise-4.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="personalized-4" name="personalized-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="personalized-4">
+                                        <img src="./img/customise-4.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="personalized-5" name="personalized-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="personalized-5">
+                                        <img src="./img/customise-4.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 4 end -->
+                    <!-- customise option 5 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-5" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Self care gifts</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-5">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="self-care-gift-1" name="self-care-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="self-care-gift-1">
+                                        <img src="./img/customise-5.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="self-care-gift-2" name="self-care-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="self-care-gift-2">
+                                        <img src="./img/customise-5.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="self-care-gift-3" name="self-care-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="self-care-gift-3">
+                                        <img src="./img/customise-5.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="self-care-gift-4" name="self-care-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="self-care-gift-4">
+                                        <img src="./img/customise-5.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="self-care-gift-5" name="self-care-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="self-care-gift-5">
+                                        <img src="./img/customise-5.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 5 end -->
+                    <!-- customise option 6 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-6" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Lifestyle gifts</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-6">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="lifestyle-gift-1" name="lifestyle-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="lifestyle-gift-1">
+                                        <img src="./img/customise-6.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="lifestyle-gift-2" name="lifestyle-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="lifestyle-gift-2">
+                                        <img src="./img/customise-6.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="lifestyle-gift-3" name="lifestyle-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="lifestyle-gift-3">
+                                        <img src="./img/customise-6.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="lifestyle-gift-4" name="lifestyle-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="lifestyle-gift-4">
+                                        <img src="./img/customise-6.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="lifestyle-gift-5" name="lifestyle-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="lifestyle-gift-5">
+                                        <img src="./img/customise-6.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 6 end -->
+                    <!-- customise option 7 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-7" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Gourmet gifts</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-7">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="gourmet-gift-1" name="gourmet-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gourmet-gift-1">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="gourmet-gift-2" name="gourmet-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gourmet-gift-2">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="gourmet-gift-3" name="gourmet-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gourmet-gift-3">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="gourmet-gift-4" name="gourmet-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gourmet-gift-4">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="gourmet-gift-5" name="gourmet-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="gourmet-gift-5">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 7 end -->
+                    <!-- customise option 8 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-8" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Chocolates</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-8">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="chocolate-1" name="chocolate" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="chocolate-1">
+                                        <img src="./img/customise-8.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="chocolate-2" name="chocolate" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="chocolate-2">
+                                        <img src="./img/customise-8.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="chocolate-3" name="chocolate" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="chocolate-3">
+                                        <img src="./img/customise-8.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="chocolate-4" name="chocolate" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="chocolate-4">
+                                        <img src="./img/customise-8.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="chocolate-5" name="chocolate" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="chocolate-5">
+                                        <img src="./img/customise-8.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 8 end -->
+                    <!-- customise option 9 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-9" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Bar gifts</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-9">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="bar-gift-1" name="bar-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bar-gift-1">
+                                        <img src="./img/customise-10.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bar-gift-2" name="bar-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bar-gift-2">
+                                        <img src="./img/customise-10.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bar-gift-3" name="bar-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bar-gift-3">
+                                        <img src="./img/customise-10.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bar-gift-4" name="bar-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bar-gift-4">
+                                        <img src="./img/customise-10.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="bar-gift-5" name="bar-gift" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="bar-gift-5">
+                                        <img src="./img/customise-10.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 9 end -->
+                    <!-- customise option 10 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-10" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Electronics</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-10">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="customise-info-container">
+                                    <span class="customise-info font-weight-bold">About personalized gifts</span>
+                                    <span class="customise-info">Once you select any product, scroll below to the bottom of personalized gifts section to add customization information of that product.</span>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="electronics-1" name="electronic" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="electronics-1">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="electronics-2" name="electronic" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="electronics-2">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="electronics-3" name="electronic" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="electronics-3">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="electronics-4" name="electronic" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="electronics-4">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="electronics-5" name="electronic" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="electronics-5">
+                                        <img src="./img/customise-7.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 10 end -->
+                    <!-- customise option 11 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-11" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Message Card</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-11">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="checkbox-container">
+                                    
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 11 end -->
+                    <!-- customise option 12 start -->
+                    <div class="col-lg customise-section">
+                        <a class="btn customise-tab shadow-none align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#customise-item-12" style="height: 50px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Add Ons</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse navbar navbar-light p-0" id="customise-item-12">
+                            <div class="navbar-nav customise-nav w-100">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="add-on-1" name="add-on" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="add-on-1">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="add-on-2" name="add-on" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="add-on-2">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="add-on-3" name="add-on" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="add-on-3">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="add-on-4" name="add-on" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="add-on-4">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                    <input type="checkbox" id="add-on-5" name="add-on" class="Send_data  input-hidden" value="Apliance Repair" />
+                                    <label for="add-on-5">
+                                        <img src="./img/customise-2.jpg" style="width:150px;border-radius:10px;" />
+                                        <span class="checkbox-text">Apliance Repair</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- customise option 12 end -->
+                    <div class="calculate">
+                        <span>Base Price</span>
+                        <span>{price}</span>
+                    </div>
+                    <div class="calculate">
+                        <span>Options Total</span>
+                        <span>{total price}</span>
+                    </div>
+                    <div class="calculate">
+                        <span>Grand Total</span>
+                        <span>{grand total}</span>
+                    </div>
+                    <div class="cart-container">
+                        <!-- item count incrementor -->
+                        <button type="submit" class="cart-button">Add To Cart</button>
+                    </div>
+                </form>
+                <!-- customise-form end -->
+                <div class="delivery">
+                    <h4>Check estimated delivery time</h4>
+                    <input type="text" placeholder="enter pincode">
+                    <button type="submit">CHECK</button>
+                </div>
+            </div>
+        </div>
+        <!-- Customise End -->
+
+        <!-- Description Start -->
+        <div class="container-fliud p-5" >
+            <div class=" col-12 p-3  bg-dark text-white sticky-top">- DESCRIPTION</div><br>
+            <div class="col scroll">
+                <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b><br><br>
+                Quis varius quam quisque id diam vel quam elementum. Cras adipiscing enim eu turpis egestas. Sed adipiscing diam donec adipiscing tristique risus. Arcu non sodales neque sodales ut etiam sit amet. Suspendisse in est ante in nibh mauris cursus. Bibendum arcu vitae elementum curabitur. Amet volutpat consequat mauris nunc congue. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Lorem mollis aliquam ut porttitor. At elementum eu facilisis sed. Vitae ultricies leo integer malesuada nunc vel risus. Accumsan in nisl nisi scelerisque. Diam sollicitudin tempor id eu.<br><br>
+                
+                Habitant morbi tristique senectus et netus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis varius quam quisque id diam vel quam elementum. Cras adipiscing enim eu turpis egestas. Sed adipiscing diam donec adipiscing tristique risus. Arcu non sodales neque sodales ut etiam sit amet. Suspendisse in est ante in nibh mauris cursus. Bibendum arcu vitae elementum curabitur. Amet volutpat consequat mauris nunc congue. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus.<br><br>
+                
+                Lorem mollis aliquam ut porttitor. At elementum eu facilisis sed. Vitae ultricies leo integer malesuada nunc vel risus. Accumsan in nisl nisi scelerisque. Diam sollicitudin tempor id eu. Habitant morbi tristique senectus et netus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis varius quam quisque id diam vel quam elementum. Cras adipiscing enim eu turpis egestas. <br><br>
+                
+                Sed adipiscing diam donec adipiscing tristique risus. Arcu non sodales neque sodales ut etiam sit amet. Suspendisse in est ante in nibh mauris cursus. Bibendum arcu vitae elementum curabitur. Amet volutpat consequat mauris nunc congue. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Lorem mollis aliquam ut porttitor.<br><br>
+                
+                At elementum eu facilisis sed. Vitae ultricies leo integer malesuada nunc vel risus. Accumsan in nisl nisi scelerisque. Diam sollicitudin tempor id eu. Habitant morbi tristique senectus et netus.<br>
+            </div>
+            
+        </div>        
+        <!-- Description End -->
+
+        <!-- Review Start -->
+        <div class="row px-xl-5">
+            <div class="col">
+              <h3 class="product-listing_suggestions product-listing_reviewHeading">
+                What customers are saying
+              </h3>
+              <div class="owl-carousel review-carousel">
+                <div class="review-card">
+                  <div class="review-card-header">
+                    <div class="review-user-info">
+                      <img
+                        src="https://pbs.twimg.com/profile_images/1388914990380306436/GeyrF752_400x400.jpg"
+                        class="review-profile-picture"
+                      />
+                      <div class="review-user-name">John Doe</div>
+                      <div class="review-date">January 16, 2023</div>
+                    </div>
+                    <div class="review-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star-o"></span>
+                    </div>
+                  </div>
+                  <div class="review-card-body">
+                    <div class="review-user-review">
+                      This product is amazing! I highly recommend it to anyone in
+                      the market for a new item.
+                    </div>
+                  </div>
+                </div>
+                <div class="review-card">
+                  <div class="review-card-header">
+                    <div class="review-user-info">
+                      <img
+                        src="https://c.saavncdn.com/732/Bawar-English-2020-20200410185305-500x500.jpg"
+                        class="review-profile-picture"
+                      />
+                      <div class="review-user-name">John Doe</div>
+                      <div class="review-date">January 16, 2023</div>
+                    </div>
+                    <div class="review-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star-o"></span>
+                    </div>
+                  </div>
+                  <div class="review-card-body">
+                    <div class="review-user-review">
+                      you can find nice clothes ( printed fabric cotton for woman
+                      and man), nice jewels (rings, brcelets...) and also gifts to
+                      take back (as paper books), at affordable price. The choice is
+                      huge and the staff is helpul.
+                    </div>
+                  </div>
+                </div>
+                <div class="review-card">
+                  <div class="review-card-header">
+                    <div class="review-user-info">
+                      <img
+                        src="https://media.licdn.com/dms/image/C4D03AQHOTV8nknOSNQ/profile-displayphoto-shrink_400_400/0/1659258795301?e=1679529600&v=beta&t=k_JJaEJayrUowlcZqVmObkhaOUeIjkYvALKmGeXRdlI"
+                        class="review-profile-picture"
+                      />
+                      <div class="review-user-name">John Doe</div>
+                      <div class="review-date">January 16, 2023</div>
+                    </div>
+                    <div class="review-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star-o"></span>
+                    </div>
+                  </div>
+                  <div class="review-card-body">
+                    <div class="review-user-review">
+                      This product is amazing! I highly recommend it to anyone in
+                      the market for a new item.
+                    </div>
+                  </div>
+                </div>
+                <div class="review-card">
+                  <div class="review-card-header">
+                    <div class="review-user-info">
+                      <img
+                        src="https://i.pinimg.com/736x/25/78/61/25786134576ce0344893b33a051160b1.jpg"
+                        class="review-profile-picture"
+                      />
+                      <div class="review-user-name">John Doe</div>
+                      <div class="review-date">January 16, 2023</div>
+                    </div>
+                    <div class="review-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star-o"></span>
+                    </div>
+                  </div>
+                  <div class="review-card-body">
+                    <div class="review-user-review">
+                      My friend and I visited this store recently and just adored
+                      all their quality products. We bought gorgeous round table
+                      clothes, dresses for girlsc and blouses for ourselves.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-5 mr-5">
+            <h4 class="mb-4 review-heading">Leave a review</h4>
+            
+            <small>Your email address will not be published. Required fields are marked *</small>
+            <div class="d-flex my-3">
+                <p class="mb-0 mr-2">Your Rating * :</p>
+                <div class="text-primary">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="message">Your Review *</label>
+                    <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group mb-0">
+                    <input type="submit" value="Leave Your Review" class="btn btn-primary px-3">
+                </div>
+            </form>
+        </div>
+        <!-- Review End -->
+
+        <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">E</span>Shopper</h1>
+                </a>
+                <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum dolore amet erat.</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed
+                    by
+                    <a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">HTML Codex</a><br>
+                    Distributed By <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+        
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>

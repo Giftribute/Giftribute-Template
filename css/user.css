@@ -1,0 +1,356 @@
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+  .header{
+      margin: 0;
+      display: flex;
+      background-color:#D19C97;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 6rem;
+      color: #fff;
+  }
+  .sign-out-button{
+    font-weight: 600;
+    color: whitesmoke;
+    padding: 1rem 3rem;
+    border: 1px solid whitesmoke;
+    background-color: #D19C97;
+    cursor: pointer;
+  }
+  .sign-out-button:hover{
+      background-color: #dcd0cf;
+      color: black;
+  }
+  .name-location > h6{
+      margin-top: 0;
+      color:#f2d3d0;
+  }
+  .name-location > h1{
+      margin-bottom: 0;
+  }
+  
+
+.user-main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.sidebar{
+    flex: 1;
+    margin-right:3rem;
+    height: 100%;
+    background-color:#F5F5F5;
+}
+
+
+.sidebar-desktop > ul > a{
+    text-decoration: none;
+    color: #000;
+
+}
+.siderbar-order{
+    border: 1.3px solid black;
+}
+.sidebar-desktop li{
+    list-style:none;
+    font-weight: 500;
+    padding:1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.sidebar-desktop > ul > a > li:active{
+    border: 1.5px solid black;
+}
+
+.sidebar-desktop ul{
+    list-style:none;
+    padding:0;
+    margin:0 auto;
+}
+
+.sidebar-mobile{
+    display: none;
+}
+
+.order-container, .profile-container, .offer-container{
+    flex: 4;
+}
+
+.order-item-container, .offer-item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d3d3d3;
+    padding: 0 0 0 2rem;
+    margin: 1rem 0; 
+}
+
+.offer-item-container{
+    padding: 1rem 2rem;
+}
+
+.container-heading{
+    margin-bottom: 2rem;
+}
+
+.container-heading > span{
+    font-size: 0.8rem;
+}
+
+.container-heading > h2{
+    margin-bottom: 0;
+}
+
+.order-detail > h3 ,.offer-detail > h3{
+    margin: 0 0 0.5rem 0;
+}
+
+.order-detail > a, .offer-detail > a{
+    text-transform: uppercase;
+    color: #20c997;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.order-detail > a:hover ,.offer-detail > a:hover{
+    color: #28a745;
+    text-decoration: underline;
+}
+
+.order-images, .order-detail, .offer-detail, .order-status{
+    flex: 1;
+}
+
+.order-images{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-images > img{
+    width: 40%;
+}
+
+.order-status{
+    font-size: 0.8rem;
+}
+
+.order-status-progress, .order-status-cancel, .order-status-shipped{
+    padding: 0 1rem;
+    font-size: 0.7rem;
+}
+
+.order-status-cancel{
+    color: #dc3545;
+}
+
+.order-status-progress{
+    color: #d3d3d3;
+}
+
+.order-status-shipped{
+    color: #28a745;
+}
+
+
+.profile-container{
+    display: flex;
+    padding-top: 3rem;
+    align-items: center;
+    padding-bottom: 3rem;
+    background-color:whitesmoke;
+}
+
+.profile-leftpart{
+    width: 20%;
+}
+
+.profile-rightpart{
+    width: 80%;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+.profile-leftpart{
+    /* background-color: aqua; */
+    padding-left: 2rem;
+    display: flex;
+    justify-content:flex-start;
+    flex: 1;
+}
+
+hr{
+    margin-right: 1rem;
+}
+
+.profile-rightpart{
+    /* background-color: brown; */
+    flex: 3
+
+}
+
+.edit{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+.email a{
+    color: crimson;
+}
+
+.profile-rightpart a{
+    text-decoration: none;
+    
+}
+
+.profile-rightpart p{
+    color: gray;
+}
+
+.image-container > img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+@media screen and (max-width: 857px){
+    .user-main-container{
+        padding: 2rem;
+    }
+
+    .profile-container{
+        font-size: 0.9rem;
+    }
+
+    .header{
+        padding: 3rem;
+    }
+
+    .container-heading > h2{
+        font-size: 1.2rem;
+    }
+
+    .order-detail > h3, .offer-detail > h3{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .name-location > h1{
+        font-size: 1.2rem;
+    }
+
+    .sign-out-button{
+        padding: 0.5rem 1rem;
+    }
+
+    .user-main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-container, .profile-container, .offer-container{
+        width: 100%;
+    }
+
+    .offer-item-container h3{
+        font-size: 1rem;
+    }
+
+    .order-detail > h3, .offer-detail > h3{
+        font-size: 0.8rem;
+    }
+
+    .order-item-container, .offer-item-container{
+        padding: 0 0 0 1rem;
+    }
+
+    .order-images{
+        justify-content: flex-start;
+        overflow: auto;
+    }
+
+    .order-images > img{
+        width: 50%;
+    }
+
+    .order-detail > h3 ,.offer-detail > h3{
+        margin: 0;
+    }
+
+    .order-status{
+        font-size: 0.6rem;
+    }
+
+    .order-status-progress, .order-status-cancel, .order-status-shipped{
+        font-size: 0.4rem;
+        padding: 0 0.4rem;
+    }
+
+    .profile-container{
+        font-size: 0.7rem;
+        padding: 2rem 0;
+    }
+
+    .profile-rightpart{
+        flex: 1;
+    }
+
+    .sidebar{
+        margin: 5% 0;
+    }
+
+    .dropbtn {
+        background-color: #D19C97;
+        color: white;
+        padding: 1rem 7rem;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 1px solid #D19C97;
+      }
+      
+      .sidebar-mobile {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content li {
+        padding: 1rem;
+        list-style: none;
+        font-weight: 500;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .sidebar-mobile:hover .dropdown-content {display: block;}
+      
+      .sidebar-mobile:hover .dropbtn {background-color: #fff;
+        color: #D19C97;
+    }
+
+      .sidebar-desktop{
+        display: none;
+      }
+}

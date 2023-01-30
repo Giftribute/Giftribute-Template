@@ -1,0 +1,508 @@
+.payment-body-container, .checkout-body-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem 5rem;
+    background-color: #eee;
+}
+
+.left-side-payment{
+    margin: 0 1%;
+    width: 75%;
+}
+
+.first-option-container, .second-option-container, .third-option-container{
+    margin: 1% 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px #888;
+    padding: 2% 0;
+}
+
+.first-option-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-number{
+    padding: 1% 5%;
+    background-color: #7d8035;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    flex: 10%;
+}
+
+.option-heading{
+    padding: 0 5%;
+    text-transform: uppercase;
+    flex: 90%;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.user-details-1, .option-details-1, .option-details, .user-details{
+    padding: 0 7%;
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option-details, .user-details{
+    flex: 100%;
+}
+
+.option-details > .option-number{
+    flex: 1%;
+    padding: 1% 3%;
+}
+
+.option-details > .option-heading{
+    flex: 99%;
+}
+
+.option-details-1, .option-details, .user-details{
+    padding: 0;
+}
+
+.user-detail-text{
+    padding: 0 5%;
+}
+
+.second-option-body, .third-option-body{
+    padding: 0 7%;
+}
+
+.order-info-container{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.order-image{
+    flex: 15%;
+    text-align: center;
+}
+
+.delete-button{
+    padding: 2% 9%;
+    margin: 10% 0;
+    color: #888;
+    font-size: 0.8rem;
+    border: none;
+    background: #fff;
+}
+
+.order-details{
+    flex: 45%;
+}
+
+.order-delivery-details{
+    flex: 25%;
+}
+
+.change-button{
+    flex: 15%;
+    text-align: center;
+}
+
+.change-button > button{
+    color: #fff;
+    background-color:rgba(255, 106, 0, 0.927);
+    border: 1px solid rgba(255, 106, 0, 0.927);
+    padding: 3% 9%;
+    border-radius: 5px;
+}
+
+.change-button > button:hover, .btn1:hover{
+    background-color: #fff;
+    color:rgb(236, 109, 50);
+    border: 1px solid rgba(255, 106, 0, 0.927);
+}
+
+.additional-gift-info{
+    display: block;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.select{
+    font-weight: 500;
+    padding: 2% 1%;
+    font-size: 1.1rem;
+}
+
+.address-card{
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff9d8;
+    box-shadow: 0 1px 5px #888;
+    align-items: flex-start;
+    cursor: pointer;
+    border: 0.2px solid rgb(238, 235, 235);
+}
+
+.address-heading{
+    display:inline-block;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 3%;
+    line-height: 10%;
+}
+
+.address-radio-button{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    accent-color: rgb(236, 109, 50);
+}
+
+.select-btn{
+    cursor: none;
+    border: none;
+    color: black;
+    background-color: lightgray;
+    font-size: 0.6rem;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.container{
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 5px 5px 5px #d3d3d3;
+}
+
+   .green{
+       color: limegreen;
+   }
+
+   .checkout-right{
+       box-shadow: 0 2px 5px #888;
+       padding:10px 10px;
+       border-radius: 5px;
+       
+       height:200px ;
+       position: sticky;
+       top: 8rem;
+       background-color: white;
+   }
+   
+   .row-1{
+       margin-top: 20px;
+       border-radius: 4PX;
+       border:NONE;
+       border-top: 1px solid darkgray;
+       border-bottom: 1PX SOLID darkgray;
+       width: 800px;
+       height: 60px;
+       display: flex;
+       justify-content: space-between;
+       background-color: white;
+   
+   }
+   .left{
+      
+       display: flex;
+       gap: 20px;
+   }
+   .right{
+      
+       display: flex;
+       gap: 10px;
+       padding-top: 8px;
+   }
+   .index{
+       
+       color:white;
+       margin-top: 10px;
+       text-align: center;
+       background-color: rgb(80, 122, 80);
+       border-radius: 4px;
+       border-top-left-radius: 0;
+       border-bottom-left-radius: 0;
+       width: 30px;
+       height: 20px;
+       
+       padding-bottom: 20px;
+     
+   }
+   .name{
+      font-size: 14PX;
+      font-weight: BOLD;
+       padding-top: 25px;
+       width: max-content;
+   }
+   .ico{
+       padding-top: 20px;
+   }
+   .price{
+       width: 100%;
+       height: 211px;
+   }
+   .heading{
+       width: 220px;
+       height: 20px;
+       color: #222222;
+       font-size: 16px;
+       font-family: sans-serif;
+       margin: 0px 0px 10px 0px;
+   }
+   .row2{
+       display: flex;
+      width: 100%;
+      height: 25px;
+       justify-content: space-between;
+       flex-direction: row;
+   
+   }
+   .left2{
+       color: #555555;
+       font-size: 14px;
+       margin: 0px 0px 9px 0px;
+       height: 18px;
+      
+   }
+   .right2{
+       width: 42px;
+       height: 16px;
+       font-size: 14px;
+   }
+   .total{
+       margin: 26px 0px 0px 0px;
+       width: 100%;
+       height: 30px;
+   }
+   .total-left,.total-right{
+       margin: 0px 0px 10px 0px;
+       width: 50px;
+       height: 20px;
+   color: #222222;
+   font-size: 16px;
+   }
+   #gifts{
+       width: 70px;
+       height: 45px;
+       border: none;
+       font-weight: bold;
+   }
+.order-heading{
+    text-transform: uppercase;
+    color: #222;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* .card-shadow{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+} */
+
+.select-occasion-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.select-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+#occasion-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 0.9rem;
+  appearance: none;
+}
+
+#occasion-select:before {
+  content: '\f006';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  pointer-events: none;
+}
+
+#occasion-select option {
+  color: #000;
+  padding: 12px;
+}
+
+.sender-details{
+        padding: 1rem;
+        margin: 1rem 0;
+}
+.right-message{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+}
+
+.right-message-text > span:first-child{
+  text-transform: uppercase;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.right-message-text > span{
+  display: block;
+}
+
+.sender-detail-right{
+
+}
+
+.left-dropdown{
+    display: flex;
+    align-items: center;
+}
+
+.left-dropdown > .option-heading{
+    flex: 50%
+}
+
+.left-dropdown > .occasion-text{
+    font-size: 0.8rem;
+    padding: 0 1rem;
+}
+
+.fa-envelope{
+    font-size: 2.5rem;
+    color: #dc3545;
+}
+
+
+.offer{
+    color:red;
+}
+.paymentcontainer{
+    margin-top:30px;
+    background-color: white;
+    /* box-shadow: 3px 3px 5px 3px rgb(161, 159, 159); */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 980px;
+}
+.paytmbox{
+    background-color:white;
+    width:220px;
+    height: 3.5rem;
+    border-radius:3px;
+    padding-left: 30px;
+    padding-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px 1px rgb(161, 159, 159);
+}
+
+.paytmbox > input{
+    position: static;
+}
+
+.paytmbtn
+{
+  
+    border-radius:3px;
+    height: 55px;
+    
+    width:260px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-top:30px;
+
+}
+
+.btn1{
+    
+    color:white;
+    background-color:rgba(255, 106, 0, 0.927);
+    border-radius:3px;
+    border: none;
+    width:260px;
+    height: 50px;
+    box-shadow: 0 1px 5px #888;
+    
+    
+}
+
+.lef{
+    display: flex;
+   
+}
+
+
+.radio-button
+{
+    display: inline-block;
+    /* width: ; */
+    height:  70px;
+    float: left;
+    padding-top: 10px;
+    padding: 15px;
+}
+.icon{
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+.heading{
+    width: 500px;
+}
+
+.right-side-payment{
+    margin: 0.7% 0;
+    flex: 25%;
+}
+
+.email{
+    font-size: 1rem;
+    color: #000;
+}
+
+.form-control {
+    background-color: #f2f2f2;
+}
+  
+@media only screen and (max-width: 768px){
+    .payment-body-container, .checkout-body-container{
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .left-side-payment, .checkout-left{
+        width: 100%;
+    }
+
+    .option-details-1{
+        flex:70%
+    }
+
+    .user-details-1{
+        flex: 30%
+    }
+
+    .right-side-payment, .checkout-right{
+        flex: 1;
+    }
+}
