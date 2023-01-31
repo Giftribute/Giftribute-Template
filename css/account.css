@@ -1,0 +1,248 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #1f6a76;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+#formsection_signup {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+#formsection_login
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    width: 100%;
+    max-width: 650px;
+    /* background-color:#7c7c7c2b; */
+   background-color:#000000d0;
+   z-index: 1;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+   
+
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: var(--white);
+    text-shadow:2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.user-info_signup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.user-info_login
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px 0;
+}
+
+.user-input-box_signup:nth-child(2n){
+   justify-content: end;
+
+}
+.user-input-box_login:nth-child(2n){
+    justify-content: end;
+ 
+ }
+.user-input-box_signup{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box_login{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box_signup label{
+    color: var(--white);
+    width: 95%;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box_login label{
+    color: var(--white);
+    width: 95%;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box_signup input{
+    
+    height: 40px;
+    width: 95%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+} 
+
+.user-input-box_login input{
+    
+    height: 40px;
+    width: 95%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+} 
+.form-submit input{
+    cursor: pointer;
+}
+.form-submit{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+.form-submit input{
+    display: block;
+    width: 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    /* background-color: #28a745; */
+    background-color:#d09c97;
+    
+    color: var(--white);
+     /* background-color: #2ed154; */
+} 
+
+.form-submit input:hover{
+   background-color: #D19C97;
+}
+
+#foot{
+   background-color: #edf1ff;
+}
+#foot a{
+    color: white;
+}
+
+@media(max-width:600px)
+{
+    .formsection_signup{
+        min-width:280px;
+        overflow: hidden;
+    }
+    .user-input-box_signup{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box_signup:nth-child(2n)
+    {
+        justify-content:space-between;
+    }
+
+    .user-info_signup{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .user-info_signup::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
+@media(max-width: 1920px)
+{
+    .formsection_login{
+        min-width:280px;
+        overflow: hidden;
+    }
+    .user-input-box_login{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box_login:nth-child(2n)
+    {
+        justify-content:space-between;
+    }
+
+    .user-info_login{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .user-info_login::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
+#brand{
+    color: #D19C97;
+}
+
+.googlelogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.googlelogin button{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px,1px,1px,1px grey;
+    width: 40%;
+}
+.googlelogin button:hover{
+    background-color: #72b3f9;
+    color: white;
+}
