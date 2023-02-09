@@ -61,7 +61,10 @@
   
     overflow: hidden;
   }
-  
+  .logo{
+    width:125px;
+    padding-top: 3px;
+  }
   .product-item:hover .product-img img{
     transform:none !important;
   }
